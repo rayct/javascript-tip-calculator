@@ -1,0 +1,17 @@
+section.tip-amount {
+    .tip-option-btn-container {
+        @include flex(row, nowrap, space-between, center);
+        gap: .5rem;
+        margin-bottom: .5rem;
+        button.active {
+            font-size: 1.1rem;
+        }
+    }
+    button.custom-tip-btn {
+        &.active {
+            @include bg(var(--main-theme));
+            font-size: 1.1rem;
+            color: white;
+        }
+    }
+}

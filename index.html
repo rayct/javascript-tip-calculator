@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- animation library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./frontend/dist/images/favicon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- styles -->
+    <link rel="stylesheet" href="./frontend/dist/styles/app.css">
+    <!-- fontawesome library -->
+    <script src="https://kit.fontawesome.com/6e358658ed.js" crossorigin="anonymous"></script>
+    <title>JavaScript Tip Calculator</title>
+</head>
+<body>
+
+    <div class="overlay" id="overlay">
+        <div class="modal">
+            <i class="close-modal fa-solid fa-x"></i>
+            <p>Enter a custom tip</p>
+            <div class="input-container">
+                <i class="fa-solid fa-dollar-sign"></i>
+                <input type="text" id="custom-tip-amount" placeholder="0.00">
+            </div>
+            <button class="disabled close-modal" id="confirm-tip">Confirm Tip</button>
+        </div>
+    </div>
+
+    <main class="calculator-container">
+        <div class="calculator-functions">
+            <!-- bill amount -->
+            <section class="bill-amount">
+                <p class="section-title">Bill Amount</p>
+                <div class="input-container">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <input type="text" placeholder="0.00" id="bill-total-input">
+                </div>
+                <div class="bill-info-group" id="bill-info">
+                    <p>Tip amount: $<span id="tip-amount-text">0.00</span></p>
+                    <p>Total with tip: $<span id="total-amount-text">0.00</span></p>
+                </div>
+            </section>
+            <!-- tip options -->
+            <section class="tip-amount">
+                <p class="section-title">Tip Amount</p>
+                <div class="tip-option-btn-container" id="tip-option-btn-container">
+                    <!-- dynamic -->
+                </div>
+                <button class="custom-tip-btn" id="custom-tip-btn">
+                    Custom Tip
+                </button>
+            </section>
+            <!-- split amount -->
+            <section class="split-amount">
+                <p class="section-title">How many people are paying?</p>
+                <ul id="split-container">
+                </ul>
+            </section>
+        </div>
+        <div class="final-output">
+            <i class="fa-solid fa-dollar-sign"></i>
+            <p>
+                <span>0.00</span>
+                / per person
+            </p>
+        </div>
+    </main>
+
+
+    <script src="./frontend/dist/scripts/app.js"></script>
+</body>
+</html>
