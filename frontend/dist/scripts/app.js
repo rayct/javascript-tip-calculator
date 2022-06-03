@@ -1,13 +1,13 @@
 // basic data for calculator
 const calculatorData = {
-    randomThemeOnLoad: false,
+    randomThemeOnLoad: true,
     defaultTotal: {
         showDefaultTotal: true,
         total: '',
     },
-    defaultTippingOptions: [5, 10, 15, 20, 25],
+    defaultTippingOptions: [5, 10, 15, 25, 50],
     customTip: true,
-    defaultSplitTotal: 6
+    defaultSplitTotal: 12
 }
 
 const toCalculate = {
