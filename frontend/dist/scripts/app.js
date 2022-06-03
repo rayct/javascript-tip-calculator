@@ -5,7 +5,7 @@ const calculatorData = {
         showDefaultTotal: true,
         total: '',
     },
-    defaultTippingOptions: [5, 10, 15],
+    defaultTippingOptions: [5, 10, 15, 20, 25],
     customTip: true,
     defaultSplitTotal: 6
 }
